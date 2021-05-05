@@ -1,0 +1,13 @@
+!.gitignore
+
+/.idea
+/.vscode
+
+# build artifacts
+/bin
+/obj
+**/bin
+**/obj
+/.vs
+/log4net.config
+/.build/*
