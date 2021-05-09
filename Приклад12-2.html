@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Коледж "Освіта"</title>
+        <script language="JavaScript">
+            function area1 (a,h) {
+                form1.output1.value=(a.value*h.value)/2 ;
+            }
+        </script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main-2.css">
+    </head>
+    <body>
+        <h2>Возний Максим КЛ-1</h2>
+        <div class="main-menu container">
+            <a class="Button" href="Приклад11.html">Головна сторінка</a>
+            <a class="Button" href="Приклад9.html">Наші проекти</a>
+            <a class="Button" href="Приклад8.html">Відеоконтент</a>
+            <a class="Button" href="Приклад12-2.html">Зворотній зв'язок</a>
+            <a class="Button" href="Приклад11-2.html">Контакти</a>
+        </div>
+        <br>
+        <div ALIGN="center">
+            <form method="GET">
+                <fieldset style="width: 300px">
+                <legend>Введення даних</legend>
+                Ваше ім'я <br>
+                <input type="text" name="firstname"><br>
+                Ваше прізвище <br>
+                <input type="text" name="lastname"><br>
+                <input type="submit" value="Відправити" style="margin: 10px">
+                </fieldset>
+            </form>
+        </div>
+
+        <br>
+        <div ALIGN="center">
+            <h3> Обчислення площі прямокутного трикутника</h3>
+
+            <form name="form1" method="GET">
+                <fieldset style="width: 300px">
+                <legend>Введення даних</legend>
+                    Основа: <input type="text" size="7"  name="st1">
+                    Висота: <input type="text" size="7" name="st2"> <br>
+                </fieldset>
+                <fieldset style="width: 300px">
+                    <legend>Обробка та виведення даних</legend>
+                    Площа: <input type="text" size="7" name="output1" readonly > <br>
+                    <input type="button" value="Обчислити" style="margin: 10px" onclick="area1 (form1.st1, form1.st2)">
+                </fieldset>
+            </form>
+
+            <form name="form2">
+                <fieldset ALIGN="left" style="width: 300px">
+                    <legend>Якими мовами ви володієте: </legend>
+                    <input class="cursors" type="checkbox" name="lan" value="100"> російська <br>
+                    <input class="cursors" type="checkbox" name="lan" value="200"> англійська <br>
+                    <input class="cursors" type="checkbox" name="lan" value="300"> французька <br>
+                    <input class="cursors" type="checkbox" name="lan" value="400"> німецька <br>
+                    <input class="cursors" type="checkbox" name="lan" value="500"> китайська <br>
+                    <input class="cursors" type="checkbox" name="lan" value="600"> японська <br>
+                    <input type="text" name="output1" size="10">
+                    <input class="cursors" type="button" value="Винагорода" onclick="grant (form2.lan, form2.output1)">
+                    <input class="cursors" type="reset"  value="Відмінити">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
