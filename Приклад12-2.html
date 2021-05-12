@@ -1,12 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Коледж "Освіта"</title>
-        <script language="JavaScript">
-            function area1 (a,h) {
-                form1.output1.value=(a.value*h.value)/2 ;
+        <script type="text/javascript">
+            function area1 (a, h) {
+                return form1.output1.value=(a.value * h.value) / 2 ;
+            }
+            function grant () {
+                return alert("Grant") ;
             }
         </script>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main-2.css">
     </head>
     <body>
@@ -39,8 +42,8 @@
             <form name="form1" method="GET">
                 <fieldset style="width: 300px">
                 <legend>Введення даних</legend>
-                    Основа: <input type="text" size="7"  name="st1">
-                    Висота: <input type="text" size="7" name="st2"> <br>
+                    Основа: <input type="number" size="7"  name="st1">
+                    Висота: <input type="number" size="7" name="st2"> <br>
                 </fieldset>
                 <fieldset style="width: 300px">
                     <legend>Обробка та виведення даних</legend>
@@ -58,8 +61,8 @@
                     <input class="cursors" type="checkbox" name="lan" value="400"> німецька <br>
                     <input class="cursors" type="checkbox" name="lan" value="500"> китайська <br>
                     <input class="cursors" type="checkbox" name="lan" value="600"> японська <br>
-                    <input type="text" name="output1" size="10">
-                    <input class="cursors" type="button" value="Винагорода" onclick="grant (form2.lan, form2.output1)">
+                    <input type="text" name="output1" size="10" readonly>
+                    <input class="cursors" type="button" value="Винагорода" onclick="grant()">
                     <input class="cursors" type="reset"  value="Відмінити">
                 </fieldset>
             </form>
