@@ -3,10 +3,18 @@
     font-size: 17px;
 }
 
+.future {
+    color: purple;
+    font-weight: bold;
+    }
+
 .body-future {
     background-color: lightgray;
 }
 
 h1,h2 {
-    ...
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial;
 }
